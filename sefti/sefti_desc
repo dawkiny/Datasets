@@ -1,0 +1,23 @@
+SETFI
+
+Manufacturing data: Semiconductor Tool Fault Isolation
+
+Contact: Eugene Tuv - Submitted: 2008-11-24 23:46 - Views : 6157 - [Edit entry]
+Authors: AA&YA, Intel
+Key facts: The dataset has 602 variables and 4000 observations (lots); RES is the target - the performance metric measured at the end of line; LOT coded as LOTID (to be
+ignored); the rest are predictors: LOCNi and TDATEi. Every lot goes through each of 300
+operations: LOCNi (operation ID) at time TDATEi, i=1-300. At each operation it could go through only one of the tools. Hence LOCNi are categorical predictors with number of levels= number of tools used, TDATEi are numeric variables (coded times through
+operation-tool). Approximately 25% of the data is missing at random.
+Keywords: regression, feature selection, signal separation
+Download BibTeX
+Download the data
+Abstract:
+
+During the semiconductor fabrication process each wafer goes through a product specific
+sequence of operations (hundreds) in batches - lots. Every lot goes through each operation in the sequence. At each operation a lot could go through only one of many tools performing the same function. Maximum number of tools could up to 25, and the number
+of tools could be different from operation to operation. At the end of the manufacturing line many performance metrics are measured to monitor deviations from the desired target specifications. Often observed variation of a performance metric is caused by a subset of
+tools with effects of the problematic tools potentially changing in time. 
+The simulated dataset closely reproduces the nature and complexity of the tool level fault isolation problem engineers face in the semiconductor manufacturing. It records every tool and time stamp at every operation every lot went through (predictors), and the corresponding numeric performance measure (target). 
+The goal is to recover a subset of influential/
+probelmatic operations/tools and the corresponding contributions in time to the variation of the numeric performance metric. Graphical representation like on the figures 1, 2 would be the best (that includes constant offset-shifts), pure interactions could be shown
+as nested boxplots.
